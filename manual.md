@@ -1110,15 +1110,15 @@ plt.show()
     
 
 
-#### Step 1: Write the Taylor Series Formula at $ x = 0 $ for $f(x) = \sin(x)$
+#### Step 1: Write the Taylor Series Formula at $x = 0$ for $f(x) = \sin(x)$
 
-The Maclaurin series is a special case of the Taylor series where $ a = 0 $. The formula for the Maclaurin series is:
+The Maclaurin series is a special case of the Taylor series where $a = 0$. The formula for the Maclaurin series is:
 
 $$
 f(x) = \sum_{k=0}^{\infty} \frac{f^{(k)}(0)}{k!} x^k
 $$
 
-Here, we need to compute the derivatives of $ f(x) = \sin(x) $ at $ x = 0 $.
+Here, we need to compute the derivatives of $f(x) = \sin(x)$ at $x = 0$.
 
 #### Step 2: Compute the First Few Derivatives of $ \sin(x) $
 
@@ -1143,11 +1143,11 @@ Here, we need to compute the derivatives of $ f(x) = \sin(x) $ at $ x = 0 $.
    f^{(4)}(x) = \sin(x), \quad f^{(4)}(0) = \sin(0) = 0
    $$
 
-We observe that the derivatives of $ \sin(x) $ repeat every four terms: $ \sin(x), \cos(x), -\sin(x), -\cos(x) $.
+We observe that the derivatives of $\sin(x)$ repeat every four terms: $\sin(x), \cos(x), -\sin(x), -\cos(x)$.
 
 #### Step 3: Write the First Few Non-Zero Terms of the Series
 
-Now we will use the derivatives at $ x = 0 $ to write the series expansion.
+Now we will use the derivatives at $x = 0$ to write the series expansion.
 
 1. **First term** (k = 0):
    $$
@@ -1176,7 +1176,7 @@ Now we will use the derivatives at $ x = 0 $ to write the series expansion.
 
 #### Step 4: Combine the Non-Zero Terms
 
-The Maclaurin series up to the 5th order for $ \sin(x) $ is:
+The Maclaurin series up to the 5th order for $\sin(x)$ is:
 
 $$
 \sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \cdots
@@ -1190,7 +1190,7 @@ $$
 
 #### Step 5: Generalize the Series
 
-Looking at the pattern, the general term for the Maclaurin series of $ \sin(x) $ is:
+Looking at the pattern, the general term for the Maclaurin series of $\sin(x)$ is:
 
 $$
 \sin(x) = \sum_{k=0}^{\infty} (-1)^k \frac{x^{2k+1}}{(2k+1)!}
@@ -1354,16 +1354,16 @@ print("Root:", c)
 
 ### Fixed Point Iteration
 
-Fixed point iteration is a numerical method used to find solutions to equations of the form $ x = g(x) $, where $ g $ is a function.
+Fixed point iteration is a numerical method used to find solutions to equations of the form $ x = g(x) $, where $g$ is a function.
 
 #### Steps
 
-1. **Choose a Function**: Define $ g(x) $ such that $ x = g(x) $ has a fixed point.
-2. **Initial Guess**: Select an initial guess $ x_0 $.
+1. **Choose a Function**: Define $g(x)$ such that $x = g(x)$ has a fixed point.
+2. **Initial Guess**: Select an initial guess $x_0$.
 3. **Iterate**: Compute subsequent values using:
    $x_{n+1} = g(x_n)$
-   Continue until $ |x_{n+1} - x_n| < \epsilon $.
-4. **Convergence Check**: Ensure the function meets conditions for convergence, typically that $ |g'(x)| < 1 $ near the fixed point.
+   Continue until $|x_{n+1} - x_n| < \epsilon$.
+4. **Convergence Check**: Ensure the function meets conditions for convergence, typically that $|g'(x)| < 1$ near the fixed point.
 
 
 ### Example
@@ -1551,7 +1551,7 @@ plt.show()
 ### Secant Method
 
 #### Objective
-To implement the Secant Method in Python and use it to approximate the root of a nonlinear equation $ f(x) = 0 $.
+To implement the Secant Method in Python and use it to approximate the root of a nonlinear equation $f(x) = 0$.
 
 ---
 
@@ -1560,13 +1560,13 @@ To implement the Secant Method in Python and use it to approximate the root of a
 The Secant Method is a numerical technique used to find roots of a function. It is an iterative method that requires two initial guesses and uses linear interpolation to approximate the root. Unlike Newton's Method, the Secant Method does not require the computation of derivatives, making it suitable for functions that are difficult to differentiate.
 
 #### Algorithm Steps
-1. Start with two initial guesses $ x_0 $ and $ x_1 $.
-2. Compute the next approximation $ x_{n+1} $ using the formula:
+1. Start with two initial guesses $x_0$ and $x_1$.
+2. Compute the next approximation $x_{n+1}$ using the formula:
    $$
    x_{n+1} = x_n - \frac{f(x_n)(x_n - x_{n-1})}{f(x_n) - f(x_{n-1})}
    $$
-3. Check if $ |f(x_{n+1})| $ or $ |x_{n+1} - x_n| $ is less than the desired tolerance ($ \text{tol} $). If true, stop the iteration.
-4. Update $ x_0 $ and $ x_1 $ to $ x_1 $ and $ x_{n+1} $, respectively, and repeat until convergence or the maximum number of iterations is reached.
+3. Check if $|f(x_{n+1})|$ or $|x_{n+1} - x_n|$ is less than the desired tolerance ($\text{tol}$). If true, stop the iteration.
+4. Update $x_0$ and $x_1$ to $x_1$ and $x_{n+1}$, respectively, and repeat until convergence or the maximum number of iterations is reached.
 5. If the method fails to converge, report the failure.
 
 
@@ -2192,7 +2192,7 @@ def euler_method(f, x0, y0, x_end, h):
 
 ### Example 1
 
-Given $ \frac{dy}{dx} = x - y $, $ y(0) = 1 $, find $ y(x) $ in the interval $ [0, 2] $ with step size $ h = 0.1 $.
+Given $\frac{dy}{dx} = x - y$, $y(0) = 1$, find $y(x)$ in the interval $[0, 2]$ with step size $h = 0.1$.
 
 The exact solution to this equation is:
 
@@ -2334,7 +2334,7 @@ def runge_kutta_4th_order(f, x0, y0, x_end, h):
 ```
 
 ### Example 2
-Given $ \frac{dy}{dx} = x - y $, $ y(0) = 1 $, find $ y(x) $ in the interval $ [0, 2] $ with step size $ h = 0.1 $.
+Given $\frac{dy}{dx} = x - y$, $y(0) = 1$, find $y(x)$ in the interval $[0, 2]$ with step size $h = 0.1$.
 
 The exact solution to this equation is:
 
@@ -2573,7 +2573,7 @@ print("Solution x:", x)
 - The goal of forward elimination is to convert the system of equations into an **upper triangular matrix**.
 - This is achieved by using elementary row operations to make the elements below the main diagonal zero.
 
-For a system $ Ax = b $, we modify the augmented matrix $ [A|b] $ in the following steps:
+For a system $Ax = b$, we modify the augmented matrix $[A|b]$ in the following steps:
 - Start with the first row and use it to eliminate the values below the first element (pivot).
 - Move to the second row, use it to eliminate the value below it, and so on.
 
@@ -2614,8 +2614,8 @@ $$
 2. **Forward Elimination**:
 
 - Eliminate the first column below the pivot (which is 3 in the first row):
-    - Row 2: $ R_2 \rightarrow R_2 - \frac{1}{3}R_1 $
-    - Row 3: $ R_3 \rightarrow R_3 - \frac{2}{3}R_1 $
+    - Row 2: $R_2 \rightarrow R_2 - \frac{1}{3}R_1$
+    - Row 3: $R_3 \rightarrow R_3 - \frac{2}{3}R_1$
 
 Resulting matrix:
 
@@ -2627,8 +2627,8 @@ $$
 \end{bmatrix}
 $$
 
-- Eliminate the second column below the pivot (which is $ \frac{5}{3} $ in the second row):
-    - Row 3: $ R_3 \rightarrow R_3 - \frac{1}{5}R_2 $
+- Eliminate the second column below the pivot (which is $\frac{5}{3}$ in the second row):
+    - Row 3: $R_3 \rightarrow R_3 - \frac{1}{5}R_2$
 
 Resulting matrix:
 
@@ -2644,9 +2644,9 @@ $$
 
 Now that the matrix is in upper triangular form, we solve for the unknowns starting from the last row:
 
-- From row 3: $ x_3 = 1 $
-- From row 2: $ \frac{5}{3}x_2 + \frac{7}{3}x_3 = 5 $, substitute $ x_3 = 1 $ to solve for $ x_2 $.
-- From row 1: $ 3x_1 + x_2 + 2x_3 = 9 $, substitute $ x_2 $ and $ x_3 $ to solve for $ x_1 $.
+- From row 3: $x_3 = 1$
+- From row 2: $\frac{5}{3}x_2 + \frac{7}{3}x_3 = 5$, substitute $x_3 = 1$ to solve for $x_2$.
+- From row 1: $3x_1 + x_2 + 2x_3 = 9$, substitute $x_2$ and $x_3$ to solve for $x_1$.
 
 The solution is obtained by back-substituting these values into the equations.
 
