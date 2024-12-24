@@ -20,7 +20,7 @@ print(a)
 ```
 
     [1 2 3]
-    
+
 
 
 ```python
@@ -30,7 +30,7 @@ print(b)
 
     [[9. 8. 7.]
      [6. 5. 4.]]
-    
+
 
 
 ```python
@@ -41,7 +41,7 @@ print('b', b.ndim)
 
     a 1
     b 2
-    
+
 
 
 ```python
@@ -120,7 +120,7 @@ print(c)
 
     [[ 1  2  3  4  5  6  7]
      [ 8  9 10 11 12 13 14]]
-    
+
 
 
 ```python
@@ -183,7 +183,7 @@ print(a)
 ```
 
     [1 2 3]
-    
+
 
 *3-d example
 
@@ -195,7 +195,7 @@ print(b)
 
     [[9. 8. 7.]
      [6. 5. 4.]]
-    
+
 
 
 ```python
@@ -336,7 +336,7 @@ print(a)
 ```
 
     [1 2 3]
-    
+
 
 #### Mathematics
 
@@ -347,7 +347,7 @@ print(a)
 ```
 
     [1 2 3 4]
-    
+
 
 
 ```python
@@ -460,7 +460,7 @@ np.matmul(a,b)
     [[2 2]
      [2 2]
      [2 2]]
-    
+
 
 
 
@@ -600,7 +600,7 @@ print(filedata)
     [[  1  13  21  11 196  75   4   3  34   6   7   8   0   1   2   3   4   5]
      [  3  42  12  33 766  75   4  55   6   4   3   4   5   6   7   0  11  12]
      [  1  22  33  11 999  11   2   1  78   0   1   2   9   8   7   1  76  88]]
-    
+
 
 ##### Boolean Masking and Advanced Indexing
 
@@ -663,7 +663,7 @@ print("(x,y)\n",list(zip(x,y)))
      [0.0, 0.3693163660980913, 1.1951328658966223, 1.7926992988449337, 1.4772654643923657, 3.8473413874435795e-16, -2.215898196588548, -4.182965030638178, -4.78053146358649, -3.3238472948828233]
     (x,y)
      [(0.0, 0.0), (0.6283185307179586, 0.3693163660980913), (1.2566370614359172, 1.1951328658966223), (1.8849555921538759, 1.7926992988449337), (2.5132741228718345, 1.4772654643923657), (3.141592653589793, 3.8473413874435795e-16), (3.7699111843077517, -2.215898196588548), (4.39822971502571, -4.182965030638178), (5.026548245743669, -4.78053146358649), (5.654866776461628, -3.3238472948828233)]
-    
+
 
 ##### Using matrix to solve equation.
 
@@ -690,7 +690,7 @@ print("[(x,y)]",list(zip(x_np,y_np)))
 ```
 
     [(x,y)] [(0.0, 0.0), (0.6981317007977318, 0.3693163660980913), (1.3962634015954636, 1.1951328658966223), (2.0943951023931953, 1.7926992988449337), (2.792526803190927, 1.4772654643923657), (3.490658503988659, 3.8473413874435795e-16), (4.1887902047863905, -2.215898196588548), (4.886921905584122, -4.182965030638178), (5.585053606381854, -4.78053146358649), (6.283185307179586, -3.3238472948828233)]
-    
+
 
 ### Ploting graphs using matplotlib
 
@@ -840,7 +840,7 @@ print(integral)
 ```
 
     (2.0, 2.220446049250313e-14)
-    
+
 
 ### Riemanns Sum
 
@@ -932,7 +932,7 @@ print(f"Error Riemann Right: {errRiemannRight}")
     Error Riemann Left: 0.01647646249054535
     Riemann Right: 1.9835235375094546
     Error Riemann Right: 0.01647646249054535
-    
+
 
 
 ```python
@@ -1029,7 +1029,7 @@ print(f_n_at_a)
 ```
 
     120
-    
+
 
 ### Example
 
@@ -1102,7 +1102,7 @@ plt.show()
 
     Taylor series expansion of f(x) = 1 / (x + 1) around x = 3 (up to 5 terms):
     -x/16 + (x - 3)**4/1024 - (x - 3)**3/256 + (x - 3)**2/64 + 7/16
-    
+
 
 
     
@@ -1120,7 +1120,7 @@ $$
 
 Here, we need to compute the derivatives of $f(x) = \sin(x)$ at $x = 0$.
 
-#### Step 2: Compute the First Few Derivatives of $ \sin(x) $
+#### Step 2: Compute the First Few Derivatives of $\sin(x)$
 
 1. **First derivative**:
    $$
@@ -1224,7 +1224,7 @@ for k in range(6):
     3
     4
     5
-    
+
 
 
 ```python
@@ -1306,7 +1306,7 @@ for order in orders:
     Error for 5 Order Taylor series approximation at x = 1.5: 0.003286
     Value for 7 Order Taylor series approximation at x = 1.5: 0.997391
     Error for 7 Order Taylor series approximation at x = 1.5: 0.000104
-    
+
 
 ### Bisection Method
 
@@ -1348,13 +1348,13 @@ print("Root:", c)
 ```
 
     Root: 2.0
-    
+
 
 ## Lab 3: Solutions of Equations in One Variable
 
 ### Fixed Point Iteration
 
-Fixed point iteration is a numerical method used to find solutions to equations of the form $ x = g(x) $, where $g$ is a function.
+Fixed point iteration is a numerical method used to find solutions to equations of the form $x = g(x)$, where $g$ is a function.
 
 #### Steps
 
@@ -1440,7 +1440,7 @@ plt.show()
 
     Root: 1.6005892555955437 with 6 iterations.
     1.6005892555955437
-    
+
 
 
     
@@ -1449,26 +1449,26 @@ plt.show()
 
 
 ### Newton's Method
-Newton's method (or the Newton-Raphson method) is a numerical technique used to find approximate solutions to equations of the form $ f(x) = 0 $.
+Newton's method (or the Newton-Raphson method) is a numerical technique used to find approximate solutions to equations of the form $f(x) = 0$.
 
 #### Steps
 
-1. **Choose a Function**: Define the function $ f(x) $ whose root you want to find.
-2. **Initial Guess**: Select an initial guess $ x_0 $.
+1. **Choose a Function**: Define the function $f(x)$ whose root you want to find.
+2. **Initial Guess**: Select an initial guess $x_0$.
 3. **Iterate**: Compute subsequent approximations using the formula:
    $$
    x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}
    $$
-   Continue iterating until the change is sufficiently small, typically $ |x_{n+1} - x_n| < \epsilon $.
-4. **Convergence Check**: Verify that the function $ f $ and its derivative $ f' $ are continuous and that $ f'(x_n) \neq 0 $ at the iterations.
+   Continue iterating until the change is sufficiently small, typically $|x_{n+1} - x_n| < \epsilon$.
+4. **Convergence Check**: Verify that the function $f$ and its derivative $f'$ are continuous and that $f'(x_n) \neq 0$ at the iterations.
 
 ### Example
-To solve $ x^2 - 2 = 0 $:
-1. Define $ f(x) = x^2 - 2 $ and $ f'(x) = 2x $.
-2. Start with $ x_0 = 1 $.
+To solve $x^2 - 2 = 0$:
+1. Define $f(x) = x^2 - 2 $ and $ f'(x) = 2x$.
+2. Start with $x_0 = 1$.
 3. Iterate:
-   - $ x_1 = 1 - \frac{f(1)}{f'(1)} = 1 - \frac{-1}{2} = 1.5 $
-   - $ x_2 = 1.5 - \frac{f(1.5)}{f'(1.5)} \approx 1.4167 $
+   - $x_1 = 1 - \frac{f(1)}{f'(1)} = 1 - \frac{-1}{2} = 1.5$
+   - $x_2 = 1.5 - \frac{f(1.5)}{f'(1.5)} \approx 1.4167$
    - Continue until values stabilize.
 
 
@@ -1537,7 +1537,7 @@ plt.show()
 ```
 
     Root found: 1.4142135623730951
-    
+
 
 
     
@@ -1618,15 +1618,15 @@ print(f"Root: {root}")
 
     Converged to 1.4142135620573204 after 5 iterations.
     Root: 1.4142135620573204
-    
+
 
 ### Lagrange Interpolation
 
-Lagrange Interpolation is a numerical method used to estimate a function $ f(x) $ that passes through a given set of data points. This method constructs a polynomial of degree $ n-1 $ (where $ n $ is the number of points) that exactly passes through these points.
+Lagrange Interpolation is a numerical method used to estimate a function $f(x)$ that passes through a given set of data points. This method constructs a polynomial of degree $n-1$ (where $n$ is the number of points) that exactly passes through these points.
 
 ---
 
-Given $ n $ data points:  
+Given $n$ data points:  
 $$
 (x_0, y_0), (x_1, y_1), \ldots, (x_{n-1}, y_{n-1}),
 $$  
@@ -1639,11 +1639,11 @@ $$
 L_i(x) = \prod_{\substack{j=0 \\ j \neq i}}^{n-1} \frac{x - x_j}{x_i - x_j}.
 $$
 
-Each basis polynomial $ (L_i(x)) $ is constructed so that:
-- $ L_i(x_i) = 1 $ for the $i$-th data point.
-- $ L_i(x_j) = 0 $ for all $ j \neq i $.
+Each basis polynomial $(L_i(x))$ is constructed so that:
+- $L_i(x_i) = 1$ for the $i$-th data point.
+- $L_i(x_j) = 0$ for all $j \neq i$.
 
-Thus, the interpolating polynomial $ P(x) $ is a weighted sum of the $ y_i $ values, with weights determined by $ L_i(x) $.
+Thus, the interpolating polynomial $P(x)$ is a weighted sum of the $y_i$ values, with weights determined by $L_i(x)$.
 
 ---
 
@@ -2119,7 +2119,7 @@ print(f"Error in Trapezoidal Rule Approximation: {error}")
 
     Approximate integral of f(x) = x^2 from 0 to 1 is: 0.33335000000000004
     Exact integral is: 0.3333333333333333
-    
+
 
 
     
@@ -2128,7 +2128,7 @@ print(f"Error in Trapezoidal Rule Approximation: {error}")
 
 
     Error in Trapezoidal Rule Approximation: 1.6666666666720342e-05
-    
+
 
 ## Lab 8: Initial-Value Problems for Ordinary Differential Equations: Euler’s Method and Runge Kutta Method
 
@@ -2262,7 +2262,7 @@ plt.show()
     1.80      1.1001893      1.1305978      0.0304085
     1.90      1.1701703      1.1991372      0.0289669
     2.00      1.2431533      1.2706706      0.0275173
-    
+
 
 
     
@@ -2410,7 +2410,7 @@ plt.show()
     1.80      1.1305983      1.1305978      0.0000005
     1.90      1.1991378      1.1991372      0.0000005
     2.00      1.2706711      1.2706706      0.0000005
-    
+
 
 
     
@@ -2426,7 +2426,7 @@ $$
 Ax = b
 $$
 
-Where $ A $ is a matrix, $ x $ is the unknown vector, and $ b $ is the known vector.
+Where $A$ is a matrix, $x$ is the unknown vector, and $b$ is the known vector.
 
 
 ### Matrix Inversion Method for Solving Linear Systems
@@ -2506,7 +2506,7 @@ print("Solution x:", x)
 ```
 
     Solution x: [2. 3.]
-    
+
 
 ### Gaussian Elimination Method
 Gaussian Elimination is a direct method for solving linear systems of equations. It transforms the system of equations into an upper triangular matrix, from which the solution can be easily obtained using back substitution.
@@ -2563,7 +2563,7 @@ print("Solution x:", x)
 ```
 
     Solution x: [2. 3.]
-    
+
 
 ### Gaussian Elimination with Backward Substitution (Without Pivoting)
 
@@ -2692,7 +2692,7 @@ print("Solution x:", x)
 ```
 
     Solution x: [2. 3. 0.]
-    
+
 
 ### LU Factorization and Solving a System of Linear Equations
 
@@ -2831,7 +2831,7 @@ print(x)
 
     Solution vector x:
     [1. 2.]
-    
+
 
 ## Lab 10: Iterative Techniques in Matrix Algebra
 
@@ -2939,7 +2939,7 @@ print("Solution:", solution)
 
     Converged in 30 iterations.
     Solution: [5. 5. 5. 5.]
-    
+
 
 ### Gauss-Seidel Method for Solving Linear Systems
 
@@ -3042,4 +3042,4 @@ print("Solution:", solution)
 
     Converged in 17 iterations.
     Solution: [5. 5. 5. 5.]
-    
+
